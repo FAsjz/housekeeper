@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity" >
+
+    <sjz.feicui.contacts.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 列表 -->
+    <!-- 滚动条 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/home_entry_item" >
+
+                <TextView
+                    style="@style/setting_TextView"
+                    android:text="@string/setting_startup" />
+
+                <ToggleButton
+                    android:id="@+id/startup"
+                    style="@style/setting_ToggleButton" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/home_entry_item" >
+
+                <TextView
+                    style="@style/setting_TextView"
+                    android:text="@string/setting_notification" />
+
+                <ToggleButton
+                    android:id="@+id/notification"
+                    style="@style/setting_ToggleButton" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/home_entry_item" >
+
+                <TextView
+                    style="@style/setting_TextView"
+                    android:text="@string/setting_messagepush" />
+
+                <ToggleButton
+                    android:id="@+id/messagepush"
+                    style="@style/setting_ToggleButton" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+
+            <RelativeLayout
+                android:id="@+id/setting_layout_help"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/home_entry_item"
+                android:onClick="doClick" >
+
+                <TextView
+                    style="@style/setting_TextView"
+                    android:text="@string/setting_help" />
+
+                <ImageView
+                    style="@style/setting_ImageView"
+                    android:src="@drawable/ic_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+
+            <RelativeLayout
+                android:id="@+id/setting_layout_ideaback"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/home_entry_item"
+                android:onClick="doClick" >
+
+                <TextView
+                    style="@style/setting_TextView"
+                    android:text="@string/setting_ideaback" />
+
+                <ImageView
+                    style="@style/setting_ImageView"
+                    android:src="@drawable/ic_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+
+            <RelativeLayout
+                android:id="@+id/setting_layout_friend"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/home_entry_item"
+                android:onClick="doClick" >
+
+                <TextView
+                    style="@style/setting_TextView"
+                    android:text="@string/setting_friend" />
+
+                <ImageView
+                    style="@style/setting_ImageView"
+                    android:src="@drawable/ic_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+
+            <RelativeLayout
+                android:id="@+id/setting_layout_versionupdate"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/home_entry_item"
+                android:onClick="doClick" >
+
+                <TextView
+                    style="@style/setting_TextView"
+                    android:text="@string/setting_versionupdate" />
+
+                <ImageView
+                    style="@style/setting_ImageView"
+                    android:src="@drawable/ic_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+
+            <RelativeLayout
+                android:id="@+id/setting_layout_about"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/home_entry_item"
+                android:onClick="doClick" >
+
+                <TextView
+                    style="@style/setting_TextView"
+                    android:text="@string/setting_about" />
+
+                <ImageView
+                    style="@style/setting_ImageView"
+                    android:src="@drawable/ic_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

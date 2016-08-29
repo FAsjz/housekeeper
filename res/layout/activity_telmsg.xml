@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TelmsgActivity" >
+ 	<!-- ActionBar导航条 -->
+
+    <sjz.feicui.contacts.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- style -->
+
+    <TextView
+        style="@style/tel_showtext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tel_show_heigth"
+        android:layout_weight="0" />
+    <!-- ListView列表 -->
+
+    <ListView
+        android:id="@+id/listview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:cacheColorHint="@color/transparent" />
+
+</LinearLayout>

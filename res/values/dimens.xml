@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 通讯大全 -->
+    <dimen name="tel_show_heigth">140dp</dimen>
+    <dimen name="tel_show_textsize">20sp</dimen>
+    <dimen name="tel_item_heigth">60dp</dimen>
+    <dimen name="tel_listitem_heigth">30dp</dimen>
+    <dimen name="lead_image_width">8dp</dimen>
+    <dimen name="lead_image_heigth">8dp</dimen>
+    <dimen name="home_image_heigth">20dp</dimen>
+    <dimen name="home_image_width">20dp</dimen>
+    <dimen name="home_actionbar_image_margin">6dp</dimen>
+    <dimen name="home_actionbar_text_margin">6dp</dimen>
+
+</resources>

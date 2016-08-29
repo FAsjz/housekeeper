@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeadActivity" 
+    android:theme="@android:style/Theme.NoTitleBar">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_lead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_lead_left"
+            android:layout_width="@dimen/lead_image_width"
+            android:layout_height="@dimen/lead_image_heigth"
+            android:contentDescription="左边点"
+            android:src="@drawable/lead_rhq_b" />
+
+        <ImageView
+            android:id="@+id/iv_lead_middle"
+            android:layout_width="@dimen/lead_image_width"
+            android:layout_height="@dimen/lead_image_heigth"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="中间点"
+            android:src="@drawable/lead_rhq_a" />
+
+        <ImageView
+            android:id="@+id/iv_lead_right"
+            android:layout_width="@dimen/lead_image_width"
+            android:layout_height="@dimen/lead_image_heigth"
+            android:contentDescription="右边点"
+            android:src="@drawable/lead_rhq_a" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_lead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:text="@string/txt_lead_dump"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+	<Button 
+	    android:id="@+id/bt_lead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:textSize="20sp"
+	    android:text="立即体验"
+	    android:textColor="@color/white"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="35dp"
+	    android:background="@drawable/lead_bt_normal"
+	    android:visibility="invisible" 
+	    />
+
+
+</RelativeLayout>

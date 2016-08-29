@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/home_entry_item"
+        android:clickable="true"
+        android:onClick="allApp" >
+
+        <TextView
+            style="@style/setting_TextView"
+            android:text="@string/softmgr_AllApp" />
+
+        <ImageView
+            style="@style/setting_ImageView"
+            android:src="@drawable/ic_arrows_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/home_entry_item"
+        android:clickable="true"
+        android:onClick="userApp" >
+
+        <TextView
+            style="@style/setting_TextView"
+            android:text="@string/softmgr_UserApp" />
+
+        <ImageView
+            style="@style/setting_ImageView"
+            android:src="@drawable/ic_arrows_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/home_entry_item"
+        android:clickable="true"
+        android:onClick="systemApp" >
+
+        <TextView
+            style="@style/setting_TextView"
+            android:text="@string/softmgr_SystemApp" />
+
+        <ImageView
+            style="@style/setting_ImageView"
+            android:src="@drawable/ic_arrows_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0" />
+
+</LinearLayout>

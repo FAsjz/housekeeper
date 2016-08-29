@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SpeedupActivity" >
+
+    <!-- ActionBar导航条 -->
+
+    <sjz.feicui.contacts.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/speedup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="品牌"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/speedup_veision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="版本"
+            android:textSize="10sp" />
+
+        <ProgressBar
+            android:id="@+id/speedup_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/speedup_progressbar" />
+
+        <TextView
+            android:id="@+id/speedup_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="3G/4G"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/speedup_bt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/softmgr_list_button"
+            android:onClick="killProgress"
+            android:text="一键清理"
+            android:textColor="@color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <!-- android:indeterminateOnly="true"用于圆形的图，没有值 -->
+
+            <ProgressBar
+                android:id="@+id/speedup_progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/softmgr_list_progressbar"
+                android:indeterminateDuration="2000"
+                android:indeterminateOnly="true"
+                android:visibility="visible" />
+
+            <ListView
+                android:id="@+id/speedup_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000" 
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/speedup_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/speedup_bt2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/softmgr_list_button"
+                android:onClick="chang"
+                android:text="只显示系统进程"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

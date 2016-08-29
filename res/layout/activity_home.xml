@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity" >
+
+    <!-- ActionBar 导航条 -->
+
+    <sjz.feicui.contacts.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 圆 -->
+	 <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:layout_weight="1"
+        layout="@layout/public_home_piechar" />
+	
+    <!-- 图片和文字 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/public_textview_group" />
+
+</LinearLayout>

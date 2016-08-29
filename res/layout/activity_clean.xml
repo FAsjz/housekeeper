@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CleanActivity" >
+
+    <!-- ActionBar 导航条 -->
+
+    <sjz.feicui.contacts.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/clean_item_allsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="32.00G"
+            android:textColor="@color/white"
+            android:textSize="44sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="建议清理"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/clean_item1"
+                style="@style/clean_item_rl" >
+
+                <TextView
+                    android:id="@+id/clean_item_left"
+                    style="@style/clean_item_left"
+                    android:text="内存垃圾" />
+
+                <!-- <ProgressBar
+                    android:id="@+id/clean_progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/clean_item_left"
+                    android:layout_gravity="center"
+                    android:indeterminateBehavior="repeat"
+                    android:indeterminateDrawable="@drawable/softmgr_list_progressbar"
+                    android:indeterminateDuration="2000"
+                    android:indeterminateOnly="true"
+                    android:visibility="visible" /> -->
+
+                <TextView
+                    android:id="@+id/clean_item_size1"
+                    style="@style/clean_item_size"
+                    android:layout_toRightOf="@id/clean_item_left" />
+
+                <CheckBox
+                    android:id="@+id/clean_item_cb1"
+                    style="@style/clean_item_iv" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/clean_item2"
+                style="@style/clean_item_rl" >
+
+                <TextView
+                    android:id="@+id/clean_item_left"
+                    style="@style/clean_item_left"
+                    android:text="缓存垃圾" />
+
+                <TextView
+                    android:id="@+id/clean_item_size2"
+                    style="@style/clean_item_size"
+                    android:layout_toRightOf="@id/clean_item_left" />
+
+                <CheckBox
+                    android:id="@+id/clean_item_cb2"
+                    style="@style/clean_item_iv" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/clean_item3"
+                style="@style/clean_item_rl" >
+
+                <TextView
+                    android:id="@+id/clean_item_left"
+                    style="@style/clean_item_left"
+                    android:text="安装包" />
+
+                <TextView
+                    android:id="@+id/clean_item_size3"
+                    style="@style/clean_item_size"
+                    android:layout_toRightOf="@id/clean_item_left" />
+
+                <CheckBox
+                    android:id="@+id/clean_item_cb3"
+                    style="@style/clean_item_iv" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:id="@+id/clean_item4"
+                style="@style/clean_item_rl" >
+
+                <TextView
+                    android:id="@+id/clean_item_left"
+                    style="@style/clean_item_left"
+                    android:text="大文件" />
+
+                <TextView
+                    android:id="@+id/clean_item_size4"
+                    style="@style/clean_item_size"
+                    android:layout_toRightOf="@id/clean_item_left" />
+
+                <CheckBox
+                    android:id="@+id/clean_item_cb4"
+                    style="@style/clean_item_iv" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/clean_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/softmgr_list_button"
+        android:onClick="chang"
+        android:text="删除所选文件"
+        android:textColor="@color/white" />
+
+</LinearLayout>

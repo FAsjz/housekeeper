@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">i管家</string>
+    <string name="tel_title">一站式号码服务平台</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_logo">LogoActivity</string>
+    <string name="title_activity_telmsg_activity">TelmsgActivityActivity</string>
+    <string name="title_activity_telmsg">TelmsgActivity</string>
+    <string name="title_activity_log_util">LogUtilActivity</string>
+    <string name="title_activity_telmsg_list">TelmsgListActivity</string>
+    <string name="title_activity_lead">LeadActivity</string>
+    <string name="txt_lead_dump">直接跳过</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="about_actionbar">关于</string>
+    <string name="setting_actionbar">设置</string>
+    <!-- Home界面文字 -->
+    <string name="home_speedup">手机加速</string>
+    <string name="home_softmgr">软件管理</string>
+    <string name="home_phonecheck">手机检测</string>
+    <string name="home_telbook">通讯大全</string>
+    <string name="home_filemgr">文件管理</string>
+    <string name="home_clean">垃圾清理</string>
+    <string name="title_activity_file_manager">FileManagerActivity</string>
+    <string name="title_activity_clean">CleanActivity</string>
+    <string name="title_activity_speedup">SpeedupActivity</string>
+    <string name="title_activity_phone_check">PhoneCheckActivity</string>
+    <string name="title_activity_soft_manager">SoftManagerActivity</string>
+    <!-- setting界面文字 -->
+    <string name="setting_startup">开机启动</string>
+    <string name="setting_notification">通知图标</string>
+    <string name="setting_messagepush">消息推送</string>
+    <string name="setting_help">帮助说明</string>
+    <string name="setting_ideaback">意见反馈</string>
+    <string name="setting_friend">好友分享</string>
+    <string name="setting_versionupdate">版本更新</string>
+    <string name="setting_about">关于我们</string>
+    <!-- 软件管理界面 -->
+    <string name="softmgr_title">软件管理</string>
+    <string name="softmgr_AllApp">所有软件</string>
+    <string name="softmgr_UserApp">用户软件</string>
+    <string name="softmgr_SystemApp">系统软件</string>
+    <string name="title_activity_soft_manager_list">SoftManagerListActivity</string>
+    <!-- 文件管理 -->
+    <string name="filetype_all">全部</string>
+    <string name="filetype_txt">文档</string>
+    <string name="filetype_image">图像</string>
+    <string name="filetype_audio">音频</string>
+    <string name="filetype_video">视频</string>
+    <string name="filetype_zip">压缩包</string>
+    <string name="filetype_apk">安装包</string>
+    <string name="title_activity_file_manager_show">FileManagerShowActivity</string>
+
+</resources>

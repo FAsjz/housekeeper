@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SoftManagerActivity" >
+
+    <!-- ActionBar导航条 -->
+
+    <sjz.feicui.contacts.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 圆 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <sjz.feicui.contacts.view.PieCharts
+            android:id="@+id/softmgr_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+             />
+
+        <LinearLayout
+            android:id="@+id/softmgr_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/softmgr_circle"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/softmgr_view1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/BlueViolet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="手机自身空间"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/softmgr_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/softmgr_layout1"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/softmgr_circle"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/softmgr_view2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="内置存储空间"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+    <!-- 第一组进度条 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机自身空间"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <ProgressBar
+            android:id="@+id/softmgr_pb1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:max="100"
+            android:progress="80"
+            android:progressDrawable="@drawable/softmgr_progressbar1" />
+
+        <TextView
+            android:id="@+id/softmgr_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="可用1G/15G"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <!-- 第二组进度条 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内置存储空间"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <ProgressBar
+            android:id="@+id/softmgr_pb2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:max="100"
+            android:progress="48"
+            android:progressDrawable="@drawable/softmgr_progressbar2" />
+
+        <TextView
+            android:id="@+id/softmgr_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="可用1G/15G"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+    </LinearLayout>
+   
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/public_softmanager_group" />
+    </ScrollView>
+
+</LinearLayout>

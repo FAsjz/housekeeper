@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0" />
+    <!-- 第一行 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_speedup"
+            style="@style/home_TextView"
+            android:drawableTop="@drawable/home_speedup"
+            android:text="@string/home_speedup" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#C0C0C0" />
+
+        <TextView
+            android:id="@+id/txt_softmgr"
+            style="@style/home_TextView"
+            android:drawableTop="@drawable/home_softmgr"
+            android:text="@string/home_softmgr" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#C0C0C0" />
+
+        <TextView
+            android:id="@+id/txt_phonecheck"
+            style="@style/home_TextView"
+            android:drawableTop="@drawable/home_phonecheck"
+            android:text="@string/home_phonecheck" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0" />
+    <!-- 第二行 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_telbook"
+            style="@style/home_TextView"
+            android:drawableTop="@drawable/home_telbook"
+            android:text="@string/home_telbook" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#C0C0C0" />
+
+        <TextView
+            android:id="@+id/txt_filemgr"
+            style="@style/home_TextView"
+            android:drawableTop="@drawable/home_filemgr"
+            android:text="@string/home_filemgr" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#C0C0C0" />
+
+        <TextView
+            android:id="@+id/txt_clean"
+            style="@style/home_TextView"
+            android:drawableTop="@drawable/home_clean"
+            android:text="@string/home_clean" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0" />
+
+</LinearLayout>

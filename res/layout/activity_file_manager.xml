@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FileManagerActivity" >
+
+    <!-- ActionBar 导航条 -->
+
+    <sjz.feicui.contacts.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/bule"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="已发现"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/filemgr_item_allsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="32.00G"
+            android:textColor="@color/white"
+            android:textSize="44sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/filemgr_item1"
+                style="@style/filemgr_item_rl"
+                >
+
+                <TextView
+                    android:id="@+id/filemgr_item_left"
+                    style="@style/filemgr_item_left"
+                    android:text="@string/filetype_all" />
+
+                <TextView
+                    android:id="@+id/filemgr_item_sizeall"
+                    style="@style/filemgr_item_size" 
+                    android:layout_toRightOf="@id/filemgr_item_left"/>
+
+                <ImageView style="@style/filemgr_item_iv" 
+                    />
+            </RelativeLayout>
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/gray"/>
+			
+            <RelativeLayout
+                android:id="@+id/filemgr_item2"
+                style="@style/filemgr_item_rl"
+                >
+
+                <TextView
+                    style="@style/filemgr_item_left"
+                    android:text="@string/filetype_txt" />
+
+                <TextView
+                    android:id="@+id/filemgr_item_size1"
+                    style="@style/filemgr_item_size" />
+
+                <ImageView style="@style/filemgr_item_iv" />
+            </RelativeLayout>
+            <View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/gray"/>
+            
+            <RelativeLayout
+                android:id="@+id/filemgr_item3"
+                style="@style/filemgr_item_rl"
+                >
+
+                <TextView
+                    style="@style/filemgr_item_left"
+                    android:text="@string/filetype_video" />
+
+                <TextView
+                    android:id="@+id/filemgr_item_size2"
+                    style="@style/filemgr_item_size" />
+
+                <ImageView style="@style/filemgr_item_iv" />
+            </RelativeLayout>
+            <View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/gray"/>
+            
+            <RelativeLayout
+                android:id="@+id/filemgr_item4"
+                style="@style/filemgr_item_rl"
+                >
+
+                <TextView
+                    style="@style/filemgr_item_left"
+                    android:text="@string/filetype_audio" />
+
+                <TextView
+                    android:id="@+id/filemgr_item_size3"
+                    style="@style/filemgr_item_size" />
+
+                <ImageView style="@style/filemgr_item_iv" />
+            </RelativeLayout>
+            <View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/gray"/>
+            
+            <RelativeLayout
+                android:id="@+id/filemgr_item5"
+                style="@style/filemgr_item_rl"
+                >
+
+                <TextView
+                    style="@style/filemgr_item_left"
+                    android:text="@string/filetype_image" />
+
+                <TextView
+                    android:id="@+id/filemgr_item_size4"
+                    style="@style/filemgr_item_size" />
+
+                <ImageView style="@style/filemgr_item_iv" />
+            </RelativeLayout>
+            <View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/gray"/>
+            
+            <RelativeLayout
+                android:id="@+id/filemgr_item6"
+                style="@style/filemgr_item_rl"
+                 >
+
+                <TextView
+                    style="@style/filemgr_item_left"
+                    android:text="@string/filetype_zip" />
+
+                <TextView
+                    android:id="@+id/filemgr_item_size5"
+                    style="@style/filemgr_item_size" />
+
+                <ImageView style="@style/filemgr_item_iv" />
+            </RelativeLayout>
+            <View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/gray"/>
+            
+            
+            <RelativeLayout
+                android:id="@+id/filemgr_item7"
+                style="@style/filemgr_item_rl"
+                 >
+
+                <TextView
+                    style="@style/filemgr_item_left"
+                    android:text="@string/filetype_apk" />
+
+                <TextView
+                    android:id="@+id/filemgr_item_size6"
+                    style="@style/filemgr_item_size" />
+
+                <ImageView style="@style/filemgr_item_iv" />
+            </RelativeLayout>
+             <View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/gray"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

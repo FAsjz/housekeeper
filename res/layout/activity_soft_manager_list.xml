@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SoftManagerListActivity" >
+
+    <!-- ActionBar -->
+
+    <sjz.feicui.contacts.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <!-- android:indeterminateOnly="true"用于圆形的图，没有值 -->
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateBehavior="repeat"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/softmgr_list_progressbar"
+            android:indeterminateDuration="2000"
+            android:indeterminateOnly="true"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/softmgr_list_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        >
+
+        <CheckBox
+            android:id="@+id/softmgr_list_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/softmgr_list_bt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/softmgr_list_button"
+            android:onClick="delApp"
+            android:text="卸载所选软件"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sjz.feicui.contacts"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- 手机震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 读取SDCard权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取电话状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 杀死进程权限 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- 调用手机摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 删除sd卡内容 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:name="sjz.feicui.contacts.application.Myapplication"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="sjz.feicui.contacts.activity.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.LogoActivity"
+            android:label="@string/title_activity_logo" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.TelmsgActivityActivity"
+            android:label="@string/title_activity_telmsg_activity" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.TelmsgActivity"
+            android:label="@string/title_activity_telmsg" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.base.utils.LogUtilActivity"
+            android:label="@string/title_activity_log_util" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.TelmsgListActivity"
+            android:label="@string/title_activity_telmsg_list" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.LeadActivity"
+            android:label="i管家" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="sjz.feicui.contacts.service.LeadService" />
+
+        <activity
+            android:name="sjz.feicui.contacts.activity.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.FileManagerActivity"
+            android:label="@string/title_activity_file_manager" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.CleanActivity"
+            android:label="@string/title_activity_clean" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.SpeedupActivity"
+            android:label="@string/title_activity_speedup" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.PhoneCheckActivity"
+            android:label="@string/title_activity_phone_check" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.SoftManagerActivity"
+            android:label="@string/title_activity_soft_manager" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.SoftManagerListActivity"
+            android:label="@string/title_activity_soft_manager_list" >
+        </activity>
+        <activity
+            android:name="sjz.feicui.contacts.activity.FileManagerShowActivity"
+            android:label="@string/title_activity_file_manager_show" >
+        </activity>
+    </application>
+
+</manifest>
